@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>映画鑑賞記録一覧</title>
+</head>
+<body>
+    <h2>映画鑑賞記録一覧</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>タイトル</th>
+            <th>監督</th>
+            <th>詳細</th>
+        </tr>
+        <% let i = 0; %>
+        <% for(let row of data) { %>
+        <tr>
+            <td><%= i %></td>
+            <td><%= row.title %></td>
+            <td><%= row.director %></td>
+            <td><a href="/movies/<%= i %>">詳細を見る</a></td>
+        </tr>
+        <% i++; %>
+        <% } %>
+    </table>
+    <p><a href="/">トップへ戻る</a></p>
+</body>
+</html>
