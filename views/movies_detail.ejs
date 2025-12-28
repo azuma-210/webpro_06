@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>詳細情報</title>
+</head>
+<body>
+    <h2><%= data.title %> の詳細</h2>
+    <table border="1">
+        <tr><th>項目</th><th>データ</th></tr>
+        <tr><td>タイトル</td><td><%= data.title %></td></tr>
+        <tr><td>監督</td><td><%= data.director %></td></tr>
+        <tr><td>評価</td><td><%= data.rating %></td></tr>
+        <tr><td>感想</td><td><%= data.memo %></td></tr>
+    </table>
+    <p><a href="/movies">一覧に戻る</a></p>
+</body>
+</html>
