@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>情報の編集</title>
+</head>
+<body>
+    <h2>情報の編集</h2>
+    <form action="/komeda/update/<%= id %>" method="POST">
+        <label>メニュー名:</label><br>
+        <input type="text" name="name" value="<%= data.name %>" required><br>
+        <label>分類:</label><br>
+        <input type="text" name="type" value="<%= data.type %>"><br>
+        <label>感想:</label><br>
+        <input type="text" name="review" value="<%= data.review %>"><br><br>
+        <input type="submit" value="更新する">
+    </form>
+    <p><a href="/komeda/<%= id %>">詳細に戻る</a></p>
+</body>
+</html>

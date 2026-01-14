@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SUMMIT Artists</title>
+</head>
+<body>
+    <h2>SUMMIT所属アーティスト一覧</h2>
+    <table border="1">
+        <tr><th>ID</th><th>名前</th><th>代表曲</th><th>詳細</th></tr>
+        <% let i = 0; %>
+        <% for(let row of data) { %>
+        <tr>
+            <td><%= i %></td>
+            <td><%= row.name %></td>
+            <td><%= row.song %></td>
+            <td><a href="/summit/<%= i %>">詳細</a></td>
+        </tr>
+        <% i++; %>
+        <% } %>
+    </table>
+    <p><a href="/">トップへ戻る</a></p>
+    <p><a href="/summit/create">新規登録</a></p>
+</body>
+</html>

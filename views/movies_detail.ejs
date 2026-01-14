@@ -13,6 +13,15 @@
         <tr><td>評価</td><td><%= data.rating %></td></tr>
         <tr><td>感想</td><td><%= data.memo %></td></tr>
     </table>
+
+    <br>
+    <a href="/movies/edit/<%= id %>">編集する</a>
+    <br><br>
+
+    <form action="/movies/delete/<%= id %>" method="POST">
+        <input type="submit" value="このデータを削除する">
+    </form>
+    
     <p><a href="/movies">一覧に戻る</a></p>
 </body>
 </html>
