@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>情報の編集</title>
+</head>
+<body>
+    <h2>情報の編集</h2>
+    <form action="/summit/update/<%= id %>" method="POST">
+        <label>名前:</label><br>
+        <input type="text" name="name" value="<%= data.name %>" required><br>
+        <label>代表曲:</label><br>
+        <input type="text" name="song" value="<%= data.song %>"><br>
+        <label>活動開始年:</label><br>
+        <input type="number" name="year" value="<%= data.year %>"><br><br>
+        <input type="submit" value="更新する">
+    </form>
+    <p><a href="/summit/<%= id %>">詳細に戻る</a></p>
+</body>
+</html>

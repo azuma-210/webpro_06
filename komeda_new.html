@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規メニュー登録</title>
+</head>
+<body>
+    <h2>新規メニュー登録</h2>
+    <form action="/komeda/create" method="POST">
+        <label>メニュー名:</label><br>
+        <input type="text" name="name" required><br>
+        <label>分類:</label><br>
+        <input type="text" name="type"><br>
+        <label>感想:</label><br>
+        <input type="text" name="review"><br><br>
+        <input type="submit" value="登録">
+    </form>
+    <p><a href="/komeda">一覧に戻る</a></p>
+</body>
+</html>

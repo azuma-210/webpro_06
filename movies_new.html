@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>映画の新規登録</title>
+</head>
+<body>
+    <h2>映画の新規登録</h2>
+    <form action="/movies/create" method="POST">
+        <label>タイトル:</label><br>
+        <input type="text" name="title" required><br>
+        
+        <label>監督:</label><br>
+        <input type="text" name="director" required><br>
+        
+        <label>評価 (1-5):</label><br>
+        <input type="number" name="rating" min="1" max="5" value="3"><br>
+        
+        <label>感想:</label><br>
+        <input type="text" name="memo"><br><br>
+        
+        <input type="submit" value="登録">
+    </form>
+    <p><a href="/movies">一覧に戻る</a></p>
+</body>
+</html>

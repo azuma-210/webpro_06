@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規アーティスト登録</title>
+</head>
+<body>
+    <h2>新規アーティスト登録</h2>
+    <form action="/summit/create" method="POST">
+        <label>名前:</label><br>
+        <input type="text" name="name" required><br>
+        <label>代表曲:</label><br>
+        <input type="text" name="song"><br>
+        <label>活動開始年:</label><br>
+        <input type="number" name="year"><br><br>
+        <input type="submit" value="登録">
+    </form>
+    <p><a href="/summit">一覧に戻る</a></p>
+</body>
+</html>
